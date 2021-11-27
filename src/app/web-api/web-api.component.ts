@@ -31,11 +31,19 @@ export class WebApiComponent implements OnInit {
   }
 
   onClickMe() {
-    console.log(`request fou user: ${this.user}`);
+    console.log(`request for user: ${this.user}`);
     this.webapiService.getWebapi(this.user).subscribe((response: WebApi) => {
       this.host = response.host;
       this.time = response.time;
       this.userId = response.userId;
+    });
+  }
+
+  onClickMeCommon() {
+    console.log(`request common`);
+    this.webapiService.getCommonWebapi().subscribe((response: WebApi) => {
+      this.host = response.host;
+      this.time = response.time;
     });
   }
 
