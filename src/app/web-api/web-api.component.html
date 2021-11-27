@@ -7,7 +7,7 @@
         <input class="input" (input)="onInput($event.target.value)" />
       </div>
 
-      <button (click)="onClickMe()">GET</button>
+      <button (click)="getApi()">GET</button>
 
       <p class="has-text-centered">
         {{ host }}
@@ -19,13 +19,13 @@
         {{ userId }}
       </p>
 
-      <button (click)="onClickMeCommon()">GET COMMON</button>
+      <button (click)="getApiCommon()">GET COMMON</button>
 
       <p class="has-text-centered">
-        {{ host }}
+        {{ commonHost }}
       </p>
       <p class="has-text-centered">
-        {{ time }}
+        {{ commonTime }}
       </p>
     </div>
   </div>
