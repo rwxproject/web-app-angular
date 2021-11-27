@@ -24,8 +24,11 @@ export class WebapiService {
   getCommonWebapi() {
     console.log(`service common`);
     // const headers = new HttpHeaders().set('x-user-id', user);
-    return this.http.get<WebapiResponse>('http://system1.app.rwx.systems/api', {
-      // headers: headers,
-    });
+    return this.http.get<WebapiResponse>(
+      'http://system1.app.rwx.systems/common/api',
+      {
+        // headers: headers,
+      }
+    );
   }
 }
