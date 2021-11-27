@@ -1,3 +1,23 @@
-<p>HOST: {{ host }}</p>
-<p>TIME: {{ time | date: "y-M-d-h:mm:ss:SSS" }}</p>
-<p>USER: {{ userId }}</p>
+<div class="container">
+  <div class="columns is-centered">
+    <div class="box column is-one-third">
+      <h1 class="title has-text-centered">web-api</h1>
+
+      <div class="field">
+        <input class="input" (input)="onInput($event.target.value)" />
+      </div>
+
+      <button (click)="onClickMe()">GET</button>
+
+      <p class="has-text-centered">
+        {{ host }}
+      </p>
+      <p class="has-text-centered">
+        {{ time }}
+      </p>
+      <p class="has-text-centered">
+        {{ userId }}
+      </p>
+    </div>
+  </div>
+</div>
