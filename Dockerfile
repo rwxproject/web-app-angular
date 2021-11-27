@@ -14,6 +14,7 @@ WORKDIR /app
 
 COPY ./server/package*.json ./
 RUN npm install
+COPY ./server/*js ./
 COPY /dist/web-app-angular dist
 
 COPY . .
