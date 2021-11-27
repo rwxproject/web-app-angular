@@ -1,0 +1,7 @@
+{
+  "/api/*": {
+    "target": "http://system1.app.rwx.systems",
+    "secure": false,
+    "logLevel": "debug"
+  }
+}
